@@ -1,0 +1,51 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "description": "## Documentação da API Example\n---\n# Utilidade\n## Arquivos para download:\n- [**Rotas Insomnia**]()\n---",
+    "version": "1.0.0",
+    "title": "Example - API",
+    "contact": {
+      "email": "developers@iclouds.com.br"
+    }
+  },
+  "host": "",
+  "basePath": "/",
+  "paths": {
+    "/example": {
+      "get": {
+        "tags": [
+          {
+            "name": "Example"
+          }
+        ],
+        "summary": "Example",
+        "description": "Rota de exemplo",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "text": {
+                      "type": "string",
+                      "example": "Hello World"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error."
+          }
+        }
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Find out more about Swagger",
+    "url": "http://swagger.io"
+  }
+}
